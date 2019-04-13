@@ -1,0 +1,27 @@
+plugins {
+  id 'java'
+  id 'application'
+  id 'org.springframework.boot' version '2.1.4.RELEASE'
+  id 'io.spring.dependency-management' version '1.0.6.RELEASE'
+}
+
+group = 'com.kaushikam'
+version = '0.0.1.SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+mainClassName = 'com.kaushikam.Application'
+
+repositories {
+	mavenCentral()
+	jcenter()
+}
+
+/**
+ * Declare dependencies
+ * @see http://www.gradle.org/docs/current/userguide/userguide_single.html#sec:how_to_declare_your_dependencies
+ */
+dependencies {
+    // Spring
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+}
